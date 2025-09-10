@@ -56,7 +56,7 @@ public:
     float RotationLagSpeed = 10;
 
     UPROPERTY(BlueprintReadWrite, EditAnywhere, AdvancedDisplay)
-    bool bUseLagSubstepping = true;
+    bool bUseLagSubstepping = false;
 
     UPROPERTY(BlueprintReadWrite, EditAnywhere, AdvancedDisplay, meta = (editcondition = "bUseLagSubstepping", ClampMin = "0.005", ClampMax = "0.5", UIMin = "0.005", UIMax = "0.5"))
     float LagMaxTimeStep = 1.f / 60.f;

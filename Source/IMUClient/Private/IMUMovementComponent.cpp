@@ -28,6 +28,7 @@
 UIMUMovementComponent::UIMUMovementComponent()
 {
 	PrimaryComponentTick.bCanEverTick = true;
+    PrimaryComponentTick.TickGroup = TG_PrePhysics;
     bAutoActivate = true;
 }
 
